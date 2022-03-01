@@ -1,0 +1,62 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3323406583,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login into the application with valid credentials",
+        "description": "",
+        "id": "login-in-kare---health-project;login-into-the-application-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 43209,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.endTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3298771708,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Login page URL \"http://karehealth.menpaniproducts.com/admin/auth/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://karehealth.menpaniproducts.com/admin/auth/login",
+                  "offset": 28
+                }
+              ],
+              "location": "Login.i_am_on_the_Login_page_URL(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Login in Kare - Health Project",
+    "description": "",
+    "id": "login-in-kare---health-project",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
