@@ -21,6 +21,10 @@ public class BaseTest {
             driver = new ChromeDriver(chromeOptions);
         } else if (browser.equalsIgnoreCase(Browsers.FIREFOX.name())) {
         }
+        
+        //Puneetha to delete cookies and maximize browser
+        getDriver().manage().deleteAllCookies();
+		getDriver().manage().window().maximize();
         return driver;
     }
 

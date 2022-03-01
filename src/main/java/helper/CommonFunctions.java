@@ -1,6 +1,8 @@
 package helper;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,4 +29,31 @@ public class CommonFunctions {
 	public void click(WebElement element){
 		element.click();
 	}
+
+	//To find element
+	public WebElement findElement(By locator)
+	{
+			return driver.findElement(locator);
+	}
+	
+	//To check whether element is displayed in screen or not
+	public boolean isElementDisplayed(WebElement element) {
+		
+		try {
+			//System.out.println("Sidebar displayed "+getWebElement(sidebar).isDisplayed());
+			return element.isDisplayed();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	// Javascript executor to scroll to particular web element
+	public void scrollToElement(WebElement element)
+	{
+		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoViewIfNeeded()", element);  
+		
+	}
+	
 }

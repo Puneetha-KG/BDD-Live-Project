@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="596" started-at="2022-02-25T15:57:30Z" finished-at="2022-02-25T15:57:30Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@3b2cf7ab]" name="feature" class="testRunner.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="596" started-at="2022-02-25T15:57:30Z" finished-at="2022-02-25T15:57:30Z">
+      <class name="testRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@3b2cf7ab]" name="setUpClass" is-config="true" duration-ms="315" started-at="2022-02-25T15:57:30Z" finished-at="2022-02-25T15:57:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@3b2cf7ab]" name="feature" duration-ms="92" started-at="2022-02-25T15:57:30Z" description="Runs cucmber Features" data-provider="features" finished-at="2022-02-25T15:57:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Blood Group feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@3b2cf7ab]" name="feature" duration-ms="10" started-at="2022-02-25T15:57:30Z" description="Runs cucmber Features" data-provider="features" finished-at="2022-02-25T15:57:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login in Kare - Health Project]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="testDownClass()[pri:0, instance:testRunner.TestRunner@3b2cf7ab]" name="testDownClass" is-config="true" duration-ms="38" started-at="2022-02-25T15:57:30Z" finished-at="2022-02-25T15:57:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDownClass -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

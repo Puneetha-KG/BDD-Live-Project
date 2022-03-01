@@ -3,39 +3,15 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 3323406583,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ServiceHooks.initializeTest()"
-            }
-          }
-        ],
         "line": 3,
-        "name": "Login into the application with valid credentials",
+        "name": "User is Logged In",
         "description": "",
-        "id": "login-in-kare---health-project;login-into-the-application-with-valid-credentials",
-        "after": [
-          {
-            "result": {
-              "duration": 43209,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ServiceHooks.endTest(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 3298771708,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 4,
             "name": "I am on the Login page URL \"http://karehealth.menpaniproducts.com/admin/auth/login\"",
@@ -49,6 +25,170 @@
               "location": "Login.i_am_on_the_Login_page_URL(String)"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Enter userName \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 16
+                }
+              ],
+              "location": "Login.enter_userName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Enter Password  \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 17
+                }
+              ],
+              "location": "Login.enter_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Click on Submit Button",
+            "match": {
+              "location": "Login.click_Submit_Button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Verify the title of page Blood Group",
+        "description": "",
+        "id": "blood-group-feature;verify-the-title-of-page-blood-group",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "am in Dashboard page with title \"Admin | Dashboard\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I click on Blood Group option from the left menu bar",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I should be navigated to Blood Group list page with title Admin | Blood Group",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Blood Group feature",
+    "description": "",
+    "id": "blood-group-feature",
+    "keyword": "Feature",
+    "uri": "BloodGroup.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login into the application with valid credentials",
+        "description": "",
+        "id": "login-in-kare---health-project;login-into-the-application-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "I am on the Login page URL \"http://karehealth.menpaniproducts.com/admin/auth/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://karehealth.menpaniproducts.com/admin/auth/login",
+                  "offset": 28
+                }
+              ],
+              "location": "Login.i_am_on_the_Login_page_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Enter userName \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 16
+                }
+              ],
+              "location": "Login.enter_userName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Enter Password  \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 17
+                }
+              ],
+              "location": "Login.enter_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Click on Submit Button",
+            "match": {
+              "location": "Login.click_Submit_Button()"
+            },
+            "keyword": "Then "
           }
         ]
       }
